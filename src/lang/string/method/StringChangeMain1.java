@@ -8,6 +8,7 @@ public class StringChangeMain1 {
 
 		System.out.println("인덱스 7부터의 부분 문자열 : " + str.substring(7));
 		System.out.println("인덱스 7부터의 12까지 부분 문자열 : " + str.substring(7,12));
+		System.out.println("문자열 결합: " + str.concat("!!!"));
 
 	}
 }

@@ -18,5 +18,10 @@ public class StringChangeMain1 {
 		System.out.println("'Java'를 'World'로 변경: " + str.replace("Java", "World"));
 		//이렇게 되면 str = "Hello, Java! Welcome to Java";   => "Hello, World! Welcome to World"로 변경된다.
 
+		System.out.println("'첫번째 Java'를 'World'로 변경: " + str.replaceFirst("Java", "World"));
+		//이렇게 되면 str = "Hello, Java! Welcome to Java";   => "Hello, World! Welcome to Java"로 변경된다.
+
+
+
 	}
 }

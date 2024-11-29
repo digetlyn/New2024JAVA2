@@ -21,10 +21,10 @@ public class WrapperVsPrimitive {
 
 		//래퍼 클래스 사용
 
-		long sumWrapper = 0L;
+		Long sumWrapper = 0L;
 		startTime = System.currentTimeMillis();
 		for (int i = 0; i < iterations; i++) {
-			sumWrapper += i;
+			sumWrapper += i;  //오토박싱발생
 		}
 
 		endTime = System.currentTimeMillis();

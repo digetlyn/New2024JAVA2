@@ -9,7 +9,7 @@ public class GetTimeMain {
 
 		LocalDateTime dt = LocalDateTime.of(2030, 1, 1, 13, 30, 59);
 		System.out.println("YEAR : " + dt.get(ChronoField.YEAR));
-		System.out.println("MONTH_OF_YEAR : " + dt.get(ChronoField.MONTH_OF_YEAR));
+		System.out.println("MONTH_OF_YEAR : " + dt. get(ChronoField.MONTH_OF_YEAR));
 		System.out.println("DAY_OF_MONTH : " + dt.get(ChronoField.DAY_OF_MONTH));
 		System.out.println("HOUR_OF_DAY : " + dt.get(ChronoField.HOUR_OF_DAY));
 		System.out.println("MINUTE_OF_HOUR : " + dt.get(ChronoField.MINUTE_OF_HOUR));
@@ -24,8 +24,10 @@ public class GetTimeMain {
 		System.out.println("HOUR_OF_DAY : " + dt.getHour());
 		System.out.println("MINUTE_OF_HOUR : " + dt.getMinute());
 		System.out.println("SECOND_OF_MINUTE : " + dt.getSecond());
-
-
 		//이렇게 줄일수가 있다.
+
+		System.out.println("편의 제공 없음..");
+		System.out.println("MINUTE_OF_DAY : " + dt.get(ChronoField.MINUTE_OF_DAY));  //하루에 있는 시간(분)을 구한다.
+		System.out.println("MINUTE_OF_DAY : " + dt.get(ChronoField.SECOND_OF_DAY));  //하루에 있는 시간(초)을 구한다.
 	}
 }

@@ -12,6 +12,8 @@ public class TestBetween {
 		Period period = Period.between(startDate, endDate);
 		long daysBetween = ChronoUnit.DAYS.between(startDate, endDate);
 
+		//ChronoUnit.DAYS.between 그냥 '일' 자만 구한다. 사이의 일수.
+
 		System.out.println("시작날짜 : " + startDate);
 		System.out.println("목표날짜 : " + endDate);
 

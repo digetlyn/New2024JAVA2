@@ -1,5 +1,6 @@
 package time.test;
 
+import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.util.Scanner;
 
@@ -31,7 +32,17 @@ public class TestCalendarPrinter {
 		int offsetWeekDays = firstDayOfMonth.getDayOfWeek().getValue() % 7;
 
 		System.out.println("Su Mo Tu We Th Fr Sa ");
+		for (int i = 0; i < offsetWeekDays; i++) {
+			System.out.print("   ");
+		}
 
-
+		LocalDate dayIterator = firstDayOfMonth;
+		while (dayIterator.isBefore(firstDayOfNexMonth)){
+			System.out.printf("%2d ", dayIterator.getDayOfMonth());
+			if (dayIterator.getDayOfWeek() == DayOfWeek.SATURDAY){
+				System.out.println();
+			}
+			dayIterator = dayIterator.plusDays(1);
+		}
 	}
 }

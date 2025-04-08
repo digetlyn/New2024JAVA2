@@ -17,6 +17,8 @@ public class Network {
 			this.content = content;
 		}
 
+
+		//추가설명
 		public void print() {
 			System.out.println(content);
 		}
